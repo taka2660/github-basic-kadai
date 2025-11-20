@@ -1,0 +1,48 @@
+PS C:\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\git_challenge> dir
+
+
+    ディレクトリ: C:\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2025/11/20     11:11             32 hello_world.txt
+-a----        2025/11/14      9:47             47 index.html
+-a----        2025/11/14      9:46             47 index.html.txt
+
+
+PS C:\git_challenge> git add hello_world.txt
+PS C:\git_challenge> git commit -m "commit 1"
+[pull_request d3db7e7] commit 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\git_challenge> git log
+commit d3db7e7a181d791d866221a413d6fdf6fe62066f (HEAD -> pull_request)
+Author: taka2660 <takahisa.ota@hotmail.com>
+Date:   Thu Nov 20 11:13:08 2025 +0900
+
+    commit 1
+
+commit bd5b9b16d883a3665a2643cadf47bf56b03a89dd
+Author: taka2660 <takahisa.ota@hotmail.com>
+Date:   Thu Nov 20 11:10:25 2025 +0900
+
+PS C:\git_challenge> #addこんにちは、世界!
+PS C:\git_challenge> cat hello_world.txt
+Hello, world!
+こんにちは、世界！
+PS C:\git_challenge> git add hello_world.txt
+PS C:\git_challenge> git commit -m "Commit 2 add こんにちは、世界!"
+[pull_request 40d94b9] Commit 2 add こんにちは、世界!
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\git_challenge> git log
+commit 40d94b9a6db6bfaa209caf191a0881b8cc0ca038 (HEAD -> pull_request)
+Author: taka2660 <takahisa.ota@hotmail.com>
+Date:   Thu Nov 20 11:15:23 2025 +0900
+
+    Commit 2 add こんにちは、世界!
+
+commit d3db7e7a181d791d866221a413d6fdf6fe62066f
+Author: taka2660 <takahisa.ota@hotmail.com>
+Date:   Thu Nov 20 11:13:08 2025 +0900
